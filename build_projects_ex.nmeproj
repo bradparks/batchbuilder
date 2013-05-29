@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Android</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2DE7925B-B637-442F-BDF9-173A0DE501D0}</ProjectGuid>
+    <TargetNMMLFile>project.nmml</TargetNMMLFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Android' ">
+    <DebugSymbols>True</DebugSymbols>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|BlackBerry' ">
+    <DebugSymbols>True</DebugSymbols>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Flash' ">
+    <DebugSymbols>True</DebugSymbols>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|HTML5' ">
+    <DebugSymbols>True</DebugSymbols>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iOS' ">
+    <DebugSymbols>True</DebugSymbols>
+    <OutputPath>.</OutputPath>
+    <AdditionalArguments>-simulator</AdditionalArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Linux' ">
+    <DebugSymbols>True</DebugSymbols>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Mac' ">
+    <DebugSymbols>True</DebugSymbols>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|webOS' ">
+    <DebugSymbols>True</DebugSymbols>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Windows' ">
+    <DebugSymbols>True</DebugSymbols>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Android' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|BlackBerry' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Flash' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|HTML5' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iOS' ">
+    <OutputPath>.</OutputPath>
+    <AdditionalArguments>-simulator</AdditionalArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Linux' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Mac' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|webOS' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Windows' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="project.nmml" />
+    <Compile Include="src\Main.hx" />
+    <Compile Include="src\EzUtils.hx" />
+    <Compile Include="src\Haxelib.hx" />
+    <Compile Include="ui\alert.xml" />
+    <Compile Include="ui\buttons.xml" />
+    <Compile Include="ui\gradientSkin.xml" />
+    <Compile Include="ui\index.xml" />
+    <Compile Include="ui\main.xml" />
+    <Compile Include="ui\options.xml" />
+    <Compile Include="ui\paintSkin.xml" />
+    <Compile Include="ui\progress.xml" />
+    <Compile Include="ui\scale9Skin.xml" />
+    <Compile Include="ui\simpleButtonSettings.xml" />
+    <Compile Include="ui\skins.xml" />
+    <Compile Include="ui\sliders.xml" />
+    <Compile Include="ui\tabs.xml" />
+    <Compile Include="ui\textFields.xml" />
+    <Compile Include="ui\tileSkin.xml" />
+    <Compile Include="ui\toggles.xml" />
+    <Compile Include="ui\viewStack.xml" />
+    <Compile Include="ui\android\.DS_Store" />
+    <Compile Include="ui\android\defaults.xml" />
+    <Compile Include="ui\android\skins.xml" />
+    <Compile Include="projects.txt" />
+    <Compile Include="src\Init.hx" />
+    <Compile Include="src\WidgetEx.hx" />
+    <Compile Include="src\WidgetUtils.hx" />
+    <Compile Include="src\ru\stablex\Assets.hx" />
+    <Compile Include="src\ru\stablex\DynamicList.hx" />
+    <Compile Include="src\ru\stablex\Err.hx" />
+    <Compile Include="src\ru\stablex\TweenSprite.hx" />
+    <Compile Include="src\ru\stablex\ui\ClassBuilder.hx" />
+    <Compile Include="src\ru\stablex\ui\Dnd.hx" />
+    <Compile Include="src\ru\stablex\ui\MetaTags.hx" />
+    <Compile Include="src\ru\stablex\ui\RTXml.hx" />
+    <Compile Include="src\ru\stablex\ui\UIBuilder.hx" />
+    <Compile Include="src\ru\stablex\ui\events\DndEvent.hx" />
+    <Compile Include="src\ru\stablex\ui\events\ScrollEvent.hx" />
+    <Compile Include="src\ru\stablex\ui\events\WidgetEvent.hx" />
+    <Compile Include="src\ru\stablex\ui\layouts\Column.hx" />
+    <Compile Include="src\ru\stablex\ui\layouts\Layout.hx" />
+    <Compile Include="src\ru\stablex\ui\layouts\Row.hx" />
+    <Compile Include="src\ru\stablex\ui\misc\BtnState.hx" />
+    <Compile Include="src\ru\stablex\ui\misc\RadioGroup.hx" />
+    <Compile Include="src\ru\stablex\ui\skins\Gradient.hx" />
+    <Compile Include="src\ru\stablex\ui\skins\Img.hx" />
+    <Compile Include="src\ru\stablex\ui\skins\Layer.hx" />
+    <Compile Include="src\ru\stablex\ui\skins\Paint.hx" />
+    <Compile Include="src\ru\stablex\ui\skins\Rect.hx" />
+    <Compile Include="src\ru\stablex\ui\skins\Skin.hx" />
+    <Compile Include="src\ru\stablex\ui\skins\Slice3.hx" />
+    <Compile Include="src\ru\stablex\ui\skins\Slice9.hx" />
+    <Compile Include="src\ru\stablex\ui\skins\Tile.hx" />
+    <Compile Include="src\ru\stablex\ui\transitions\Fade.hx" />
+    <Compile Include="src\ru\stablex\ui\transitions\Scale.hx" />
+    <Compile Include="src\ru\stablex\ui\transitions\Slide.hx" />
+    <Compile Include="src\ru\stablex\ui\transitions\Transition.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\Bmp.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\Box.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\Button.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\Checkbox.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\Clock.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\Floating.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\HBox.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\InputText.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\Options.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\Progress.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\Radio.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\Scroll.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\Slider.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\StateButton.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\Switch.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\TabPage.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\TabStack.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\Text.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\Tip.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\Toggle.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\VBox.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\ViewStack.hx" />
+    <Compile Include="src\ru\stablex\ui\widgets\Widget.hx" />
+    <Compile Include="src\ColorWidget.hx" />
+    <Compile Include="src\BuildProjectItem.hx" />
+    <Compile Include="src\ProjectBuilder.hx" />
+    <Compile Include="ui\buildProjectItemUi.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="ui\" />
+    <Folder Include="src\ru\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ColorWidget widthPt="100" h="60">
+    <Widget widthPt="100" h="10"/>
+    <Button left="30" name="'btn'" text="'Sample Text'" defaults="'MenuItem'"/>
+    <Bmp top="35" left="3" name="'img'" src="'ui/android/img/checkbox.png'"/>
+    <Text left="40" top="30" name="'status'" text="'NOT built'"/>
+    <Checkbox name="'check'" top="10" selected="true"/>
+</ColorWidget>

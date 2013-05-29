@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Box widthPt="100" heightPt="100">
+  <Widget widthPt="100" heightPt="10" layout:Column-cols="[-1,-1,-1,-1,-1]">
+    <Button name="'btnBuildAll'" text="'Build All'" defaults="'MenuItem'" ico="null"/>
+    <Button name="'btnBuildSelected'" text="'Build Selected'" defaults="'MenuItem'" ico="null"/>
+    <Button name="'btnBuildFailed'" text="'Build Failed'" defaults="'MenuItem'" ico="null"/>
+    <Button name="'btnKill'" text="'Stop'" defaults="'MenuItem'" ico="null"/>
+    <Button name="'btnClearAll'" text="'Reset'" defaults="'MenuItem'" ico="null"/>
+  </Widget>
+  <Widget widthPt="100" heightPt="5" layout:Column-cols="[0.06,0.48,0.07,0.15,0.02,0.07,0.15]">
+      <Text defaults="'Default'" text="'Folder:'" align="'left,middle'" />
+      <InputText name="'projectFolder'" defaults="'Default'" format-color="0xFFFFFF" format-size="18" widthPt="100" text="'A folder to search for NMML files'" align="'left,middle'" />
+      <Text defaults="'Default'" text="'Target:'" align="'left,middle'" />
+      <Options name="'btnTarget'" defaults = "'Default'" align="'left,middle'" 
+          options = "[['CPP', 'cpp'], ['Flash', 'flash'], ['Neko', 'neko'], ['HTML5', 'html5']]"
+      />
+      <Text defaults="'Default'" text="' '" align="'left,middle'" />
+      <Text defaults="'Default'" text="'Select:'" align="'left,middle'" />
+      <Options name="'btnSelection'" defaults = "'Default'" align="'left,middle'" 
+          options = "[['Select Items', ''], ['All', 'all'], ['None', 'none'], ['Failed builds', 'error'], ['Invert Selection', 'invert']]"
+      />
+  </Widget>
+  <Widget widthPt="100" heightPt="65" layout:Column-cols="[-1]">
+    <Scroll defaults="'Screen'">
+      <Box name="'lstAllProjects'" widthPt="100"/>
+    </Scroll>
+  </Widget>
+  <Box widthPt="100" heightPt="20">
+    <Scroll defaults="'Screen'">
+      <Box widthPt="100">
+        <Text name="'txt'" text="'\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'"/>
+      </Box>
+    </Scroll>
+  </Box>
+</Box>

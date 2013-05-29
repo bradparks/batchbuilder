@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Progress bars demo -->
+<Scroll name="'progressBars'" defaults="'Screen,Level1'">
+  <VBox widthPt="100" heightPt="100">
+    <Text widthPt="50" heightPt="10" text="'hi there2'"/>
+      <Progress max="200" widthPt="95" on-enterFrame="
+        $this.value ++;
+        if( $this.value > $this.max ) $this.value = 0;
+        "/>
+  </VBox>
+</Scroll>
