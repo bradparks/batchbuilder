@@ -22,7 +22,7 @@ class Init{
       UIBuilder.regClass('Main');
   
       //initialize StablexUI
-      UIBuilder.saveCodeTo('/tmp/stablex');
+      //UIBuilder.saveCodeTo('/tmp/stablex');
   
       UIBuilder.init('ui/android/defaults.xml');
   

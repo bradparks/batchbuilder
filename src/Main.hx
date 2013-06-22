@@ -3,7 +3,6 @@ package;
 import nme.display.StageAlign;
 import nme.display.StageScaleMode;
 import nme.Lib;
-import cpp.vm.Thread;
 import ru.stablex.ui.UIBuilder;
 import ru.stablex.ui.widgets.Button;
 import ru.stablex.ui.widgets.Text;
@@ -11,6 +10,12 @@ import ru.stablex.ui.widgets.Options;
 import ru.stablex.ui.events.WidgetEvent;
 import nme.events.MouseEvent;
 import nme.events.MouseEvent;
+
+#if neko
+import neko.vm.Thread;
+#else
+import cpp.vm.Thread;
+#end
 
 using WidgetUtils;
 
@@ -189,11 +194,13 @@ class Main extends ru.stablex.ui.widgets.Widget
   {
     this.lstAllProjects.removeChildren();
     
-    //var data = ProjectBuilder.getDataFileAsArray("projects.txt");
+    var data = ProjectBuilder.getDataFileAsArray("projects.txt");
     
+    /*
     var folder = "/Users/Brad/haxedemos/official_clean";
-    var pattern = ".*.nmml$";
+    var pattern = "FlixelNME.xml$";
     var data = EzUtils.findFilesInFolder(folder, pattern, true);
+    */
     
     for (project in data)
     {

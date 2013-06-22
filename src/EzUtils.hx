@@ -12,7 +12,7 @@ class EzUtils
   static public function appFile(filename)
   {
     return Sys.executablePath() + "/" + filename;
-    //return "/Users/Brad/haxedemos/build_projects_ex/" + filename;
+    //return "/Users/Brad/haxedemos/batchbuilder/" + filename;
   }
   
   

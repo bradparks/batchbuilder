@@ -2,14 +2,19 @@ package;
 
 import nme.events.MouseEvent;
 import ru.stablex.ui.widgets.Widget;
-import cpp.vm.Thread;
 using WidgetUtils;
+
+#if neko
+import neko.vm.Thread;
+#else
+import cpp.vm.Thread;
+#end
 
 class BuildProjectItem extends BuildProjectItemUi
 {
   public var builder: ProjectBuilder;
-  public var project (getProject,setProject) : String;
-  public var active (getActive,setActive) : Bool;
+  public var project (get,set) : String;
+  public var active (get,set) : Bool;
   public var buildOp: String;
   public var buildTarget: String;
   private var _active: Bool;
@@ -41,24 +46,24 @@ class BuildProjectItem extends BuildProjectItemUi
      refreshBuild();
   }
 
-  private function getProject(): String
+  private function get_project(): String
   {
     return btn.text;
   }
 
-  private function setProject(value:String):String
+  private function set_project(value:String):String
   {
     btn.text = value;
     
     return btn.text;
   }
 
-  private function getActive(): Bool
+  private function get_active(): Bool
   {
     return _active;
   }
 
-  private function setActive(value:Bool):Bool
+  private function set_active(value:Bool):Bool
   {
     if (value)
     {

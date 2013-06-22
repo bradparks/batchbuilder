@@ -1,61 +1,25 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|Mac" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ui/index.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/WidgetUtils.hx">
     <Files>
       <File FileName="ui/main.xml" Line="18" Column="41" />
       <File FileName="src/Haxelib.hx" Line="10" Column="1" />
-      <File FileName="project.nmml" Line="17" Column="26" />
       <File FileName="src/EzUtils.hx" Line="18" Column="2" />
-      <File FileName="src/Init.hx" Line="19" Column="67" />
-      <File FileName="src/Main.hx" Line="198" Column="25" />
-      <File FileName="src/ru/stablex/ui/UIBuilder.hx" Line="287" Column="27" />
-      <File FileName="src/ru/stablex/ui/ClassBuilder.hx" Line="34" Column="20" />
-      <File FileName="../../../../usr/lib/haxe/std/neko/_std/Xml.hx" Line="120" Column="11" />
+      <File FileName="src/Init.hx" Line="9" Column="11" />
+      <File FileName="src/Main.hx" Line="199" Column="14" />
+      <File FileName="../../../../usr/lib/haxe/std/neko/_std/Xml.hx" Line="120" Column="1" />
       <File FileName="src/WidgetEx.hx" Line="14" Column="22" />
       <File FileName="src/WidgetUtils.hx" Line="29" Column="16" />
-      <File FileName="src/ru/stablex/ui/widgets/Progress.hx" Line="26" Column="1" />
       <File FileName="ui/android/defaults.xml" Line="1" Column="1" />
       <File FileName="ui/progress.xml" Line="5" Column="37" />
-      <File FileName="src/ru/stablex/ui/widgets/Box.hx" Line="489" Column="35" />
-      <File FileName="src/ru/stablex/ui/widgets/Widget.hx" Line="246" Column="27" />
-      <File FileName="src/ru/stablex/ui/widgets/Options.hx" Line="60" Column="32" />
-      <File FileName="src/ru/stablex/ui/events/WidgetEvent.hx" Line="21" Column="52" />
-      <File FileName="ui/index.xml" Line="15" Column="1" />
+      <File FileName="ui/index.xml" Line="20" Column="11" />
       <File FileName="ui/buildProjectItemUi.xml" Line="10" Column="1" />
       <File FileName="src/ProjectBuilder.hx" Line="88" Column="55" />
       <File FileName="src/ColorWidget.hx" Line="4" Column="1" />
-      <File FileName="src/BuildProjectItem.hx" Line="74" Column="14" />
-      <File FileName="src/ru/stablex/ui/MetaTags.hx" Line="43" Column="1" />
+      <File FileName="src/BuildProjectItem.hx" Line="61" Column="24" />
+      <File FileName="build/mac/cpp/haxe/ApplicationMain.hx" Line="20" Column="2" />
+      <File FileName="project.nmml" Line="12" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="build_projects_ex" expanded="True">
-            <Node name="src" expanded="True">
-              <Node name="ru" expanded="True">
-                <Node name="stablex" expanded="True">
-                  <Node name="ui" expanded="True">
-                    <Node name="widgets" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-            <Node name="ui" expanded="True">
-              <Node name="index.xml" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="ClassPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-      <Pad Id="ConnectionManagerPad">
-        <State selected="True" />
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

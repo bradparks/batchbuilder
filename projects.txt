@@ -1,11 +1,5 @@
-CaveGenerator/FlixelNME.nmml
-Collisions/FlixelNME.nmml
-CollisionsAndGroupingDemo/FlixelNME.nmml
-FlxInvaders/FlixelNME.nmml
-FlxPong/FlixelNME.nmml
-FlxSnake/FlixelNME.nmml
-FlxSteering/Project.nmml
-FlxTeroids/FlixelNME.nmml
-ParticlesDemo/FlixelNME.nmml
-ParticlesExt/FlixelNME.nmml
-PathfindingDemo/FlixelNME.nmml
+/Users/Brad/haxedemos/official_clean/CaveGenerator/FlixelNME.xml
+/Users/Brad/haxedemos/official_clean/Collisions/FlixelNME.xml
+/Users/Brad/haxedemos/official_clean/CollisionsAndGroupingDemo/FlixelNME.xml
+/Users/Brad/haxedemos/official_clean/FlxInvaders/FlixelNME.xml
+/Users/Brad/haxedemos/official_clean/FlxPong/FlixelNME.xml

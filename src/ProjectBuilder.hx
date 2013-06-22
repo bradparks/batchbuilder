@@ -2,6 +2,8 @@ package;
 
 import sys.io.Process;
 
+using StringTools;
+
 class ProjectBuilder 
 {
   public var error:String;
@@ -57,7 +59,7 @@ class ProjectBuilder
     owner.processClick();
     try
     {
-      runNme(projectFolderName, "build", nmmlFile, target);
+      runOpenFl(projectFolderName, "build", nmmlFile, target);
     }
     catch (e:String)
     {
@@ -99,11 +101,13 @@ class ProjectBuilder
     out(projectName + ": " + errorMsg);
   }
 
-  public function runNme(projectName:String, cmd:String, nmmlFile:String, target:String)
+  public function runOpenFl(projectName:String, cmd:String, nmmlFile:String, target:String)
   {
     out("Processing:" + projectName);
 
-    p = new Process("nme", [cmd, nmmlFile, target]);
+    trace(["openfl",cmd, nmmlFile, target]);
+
+    p = new Process("openfl", [cmd, nmmlFile, target]);
 
     this.error = p.stderr.readAll().toString();
     this.stdout = p.stdout.readAll().toString();
@@ -125,7 +129,7 @@ class ProjectBuilder
   {
     var absoluteFilename = EzUtils.appFile(fileName);
     var txt = sys.io.File.getContent(absoluteFilename);
-    var result = txt.split("\n");
+    var result = txt.trim().split("\n");
 
     return result;
   }
