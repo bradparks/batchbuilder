@@ -9,10 +9,50 @@ class EzUtils
     return ! isMissing(obj);
   }
 
+  static public function die(msg:String)
+  {
+    trace('');
+    trace(msg);
+    trace('');
+    Sys.exit(1);
+  }
+
+  static public function inStr(aString:String, searchFor)
+  {
+    return aString.indexOf(searchFor) != -1;
+  }
+
+  static public function isDev()
+  {
+    var path = Sys.executablePath();
+
+    var result:Bool = false;
+
+    result = result || inStr(path, 'neko/bin');
+    result = result || inStr(path, 'neko\\bin');
+
+    return result;
+  }
+
+  static public function appPath()
+  {
+    var result = Sys.executablePath();
+
+    if (isDev())
+    {
+      var parts = result.split("/");
+      var validParts = parts.slice(0, parts.length - 9);
+      result = validParts.join("/");
+    }
+
+    return result;
+  }
+
   static public function appFile(filename)
   {
-    return Sys.executablePath() + "/" + filename;
-    //return "/Users/Brad/haxedemos/batchbuilder/" + filename;
+    var result:String = appPath() + "/" + filename;
+
+    return result;
   }
   
   
@@ -91,7 +131,7 @@ class EzUtils
 #end
   } 
 
-  static function nvl(data:Dynamic, defaultValue:String)
+  public static function nvl(data:Dynamic, defaultValue:String)
   {
     if (data == null)
       return defaultValue;
@@ -116,6 +156,11 @@ class EzUtils
   static public function fullPath(folder:String, filename:String)
   {
     return folder + "/" + filename;
+  }
+
+  static public function exists(filename)
+  {
+      return sys.FileSystem.exists(filename);
   }
 
   static public function ensureFoldersExist(filename:String)

@@ -127,9 +127,22 @@ class ProjectBuilder
 
   static public function getDataFileAsArray(fileName)
   {
-    var absoluteFilename = EzUtils.appFile(fileName);
-    var txt = sys.io.File.getContent(absoluteFilename);
-    var result = txt.trim().split("\n");
+    var result = new Array<String>();
+    var txt = "";
+
+    try
+    {
+      var absoluteFilename = EzUtils.appFile(fileName);
+      if (! EzUtils.exists(absoluteFilename))
+        return result;
+
+      var data = sys.io.File.getContent(absoluteFilename);
+      txt = EzUtils.nvl(data, "");
+      result = txt.trim().split("\n");
+    }
+    catch(e:String)
+    {
+    }
 
     return result;
   }

@@ -184,7 +184,6 @@ class Main extends ru.stablex.ui.widgets.Widget
     }
   }
 
-
   public function onInfoEvent(text:String)
   {
     info.text = text;
@@ -195,12 +194,12 @@ class Main extends ru.stablex.ui.widgets.Widget
     this.lstAllProjects.removeChildren();
     
     var data = ProjectBuilder.getDataFileAsArray("projects.txt");
-    
-    /*
-    var folder = "/Users/Brad/haxedemos/official_clean";
-    var pattern = "FlixelNME.xml$";
-    var data = EzUtils.findFilesInFolder(folder, pattern, true);
-    */
+    if (data.length == 0)
+    {
+      var folder = Sys.getCwd();
+      var pattern = "FlixelNME.xml$";
+      data = EzUtils.findFilesInFolder(folder, pattern, true);
+    }
     
     for (project in data)
     {
