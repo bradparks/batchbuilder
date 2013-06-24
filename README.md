@@ -1,18 +1,14 @@
 Batch Builder
 ============
 
-BatchBuilder - Build multiple NME Projects using a SIMPLE GUI
+BatchBuilder - Build multiple OpenFL Projects using a SIMPLE GUI
 
-A PRE PRE Alpha tool to build multiple NME projects using a GUI. This isn't ready for any serious use at all, yet....
+A PRE PRE Alpha tool to build multiple OpenFL projects using a GUI. This isn't ready for any serious use at all, yet....
 
-Currently targets CPP builds, and has only been built using MonoDevelop on a mac.
+Currently targets Neko and CPP builds, and has only been built on a mac.
 
-It's so alpha that you need to edit code to specify the folder to search for NMML files to build ;-)
+To specify the projects to build, either edit the "projects.txt" file, or cd into the dir that you want to run tests from, and launch the executable from there.
 
-Edit src/Main.xh and change the following path to the path with your NMML files in it.
-
-      var folder = "/Users/Brad/haxedemos/official_clean";
-      
 Notes: If you try it, you'll see it's definitely not there yet.... The big thing it needs is a common dialog for browsing for the folder to select.... I'm planning on doing that sometime soon.....
 
 My personal TODO's are:
@@ -24,8 +20,8 @@ My personal TODO's are:
 
 After that, I plan on allowing multiple configurations to be setup and saved, so you could say:
 
-- build all projects using flixel 1.09, and NME 3.5.5
-- build all projets using flixel 1.08 and NME 3.5.5
+- build all projects using flixel 1.09, and OpenFL 
+- build all projets using flixel 1.08 and OpenFL 
 - Summarize results for both of the above builds.
 
 This would be "generic" in the sense that it just used "haxelib list" behind the scenes to get an configure the targets and active library versions, and would allow any lib to be specified in the configuration.

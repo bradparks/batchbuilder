@@ -28,8 +28,9 @@ class EzUtils
 
     var result:Bool = false;
 
-    result = result || inStr(path, 'neko/bin');
-    result = result || inStr(path, 'neko\\bin');
+    result = result || inStr(path, '/bin');
+    result = result || inStr(path, '\\bin');
+    result = result && inStr(path, 'build');
 
     return result;
   }

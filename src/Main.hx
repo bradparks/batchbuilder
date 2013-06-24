@@ -175,8 +175,12 @@ class Main extends ru.stablex.ui.widgets.Widget
       project.buildTarget = btnTarget.value;
       
       if (! cb(project))
+      {
+        trace('skip');
         continue;
+      }
         
+        trace('running');
       if (project.processClick())
       {
         
