@@ -21,7 +21,7 @@ My personal TODO's are:
 After that, I plan on allowing multiple configurations to be setup and saved, so you could say:
 
 - build all projects using flixel 1.09, and OpenFL 
-- build all projects using flixel 1.08 and OpenFL 
+- build all projets using flixel 1.08 and OpenFL 
 - Summarize results for both of the above builds.
 
 This would be "generic" in the sense that it just used "haxelib list" behind the scenes to get an configure the targets and active library versions, and would allow any lib to be specified in the configuration.
